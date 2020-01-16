@@ -6,12 +6,12 @@
  */
 
 ?>
-<section class="hero is-fullheight" style="margin-top: calc(-5% + 1px);">
-  <div class="hero-body">
-    <div class="container has-text-centered">
+<section class="hero is-fullheight">
+  <div class="hero-body section">
+    <div class="container">
       <div class="column is-8 is-offset-2">
-        <h1><a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/images/iblocks-teq-logo_transparent.png" alt="iBlocks" /></a></h1>
-        <h1 class="title white">End-User License Agreement (EULA)</h1>
+        <h1 class="main-header strong">End-User License Agreement (EULA)</h1>
+        <br />
         <div class="card content">
           <article id="ula-agreement" class="card-content">
             <p>1. INTRODUCTION. Teq, Inc. (“Teq”) grants to the school or other organization (the “Organization”) which purchases this content (the “License”) a limited license to use Teq’s proprietary Content (as defined below) strictly as set forth in this agreement (the “Agreement”). By checking the “I Agree” box on the website or using the Content, you agree to legally bind you and your Organization to the terms of this Agreement. </p>
