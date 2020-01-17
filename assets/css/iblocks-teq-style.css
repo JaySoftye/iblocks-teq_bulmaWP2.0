@@ -492,15 +492,15 @@ nav.navbar.mainnav.navScrolled {
 
 @keyframes navBrandShrink {
   from {
-    max-height: 3.75rem;
+    max-height: 3.78rem;
   }
   to {
-    max-height: 2.1rem;
+    max-height: 3.51rem;
   }
 }
 
 nav.navbar.mainnav.navScrolled .navbar-brand .navbar-item img {
-  max-height: 2.1rem;
+  max-height: 3.51rem;
   animation-duration: .51s;
   animation-name: navBrandShrink;
 }
@@ -532,6 +532,7 @@ nav.navbar.mainnav.navScrolled .navbar-menu .navbar-end a.navbar-item.rubegoldbe
 
 .nav.mobile-menu {
   position: absolute;
+  z-index: 999;
   display: none;
   top: 4.25rem;
   right: 0;
