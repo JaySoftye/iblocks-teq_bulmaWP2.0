@@ -15,7 +15,7 @@
             <a href="<?php echo site_url(); ?>">
               <img class="three-quarters-width" src="<?php echo get_template_directory_uri();?>/assets/img/iblocks-teq-logo_transparent.png" alt="iBlocks" />
             </a>
-            <p>7 Norden Lane<br />Huntington Station, NY 11746<br />877.455.9369<br /><a href="<?php echo site_url(); ?>" class="sans-serif white-text">iBlocks.teq.com</a></p>
+            <p>7 Norden Lane<br />Huntington Station, NY 11746<br />877.455.9369<br /><a href="<?php echo site_url(); ?>" class="sans-serif white-text">iBlocks.com</a></p>
           </div>
           <div class="column is-one-quarter">
             <ul class="menu-list">
@@ -147,7 +147,7 @@
             <a href="<?php echo site_url(); ?>">
               <img class="three-quarters-width" src="<?php echo get_template_directory_uri();?>/assets/img/iblocks-teq-logo_transparent.png" alt="iBlocks" />
             </a>
-            <p>7 Norden Lane<br />Huntington Station, NY 11746<br />877.455.9369<br /><a href="<?php echo site_url(); ?>" class="sans-serif white-text">iBlocks.teq.com</a></p>
+            <p>7 Norden Lane<br />Huntington Station, NY 11746<br />877.455.9369<br /><a href="<?php echo site_url(); ?>" class="sans-serif white-text">iBlocks.com</a></p>
           </div>
           <div class="column is-one-quarter">
             <ul class="menu-list">

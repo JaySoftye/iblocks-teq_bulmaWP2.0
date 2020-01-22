@@ -106,14 +106,14 @@ get_header(); ?>
         <p><img src="<?php echo get_template_directory_uri();?>/assets/img/rubegoldberg-section-build-a-chain-reaction.jpg" /></p>
       </div>
       <div class="column is-4-desktop padding-sm target-animate">
-        <h2 class="sub-header"><strong>Think Outside of the Box “a partnership made in heaven.”</strong> </h2>
+        <h2 class="sub-header"><strong>A partnership made in heaven.</strong> </h2>
         <p><img src="<?php echo get_template_directory_uri();?>/assets/img/rubegoldberg-section-partnership-logos.jpg" /></p>
         <p class="caption sans-serif padding-top">Artwork Copyright © and TM Rube Goldberg Inc.  All Rights Reserved.  All materials used with permission.</p>
       </div>
       <div class="column is-4-deskop padding-sm target-animate-fast">
         <p class="sans-serif">Rube Goldberg Inc has teamed up with Teq to create a series of Rube Goldberg Machine iBlocks. </p>
         <p class="sans-serif">Rube Goldberg Machines are silly, complicated, wacky inventions that perform a simple task like flipping a switch or pouring a bowl of cereal.</p>
-        <p class="sans-serif">Teq’s Rube Goldberg Machine iBlocks use the engineering design process and create the foundation that engages and encourages students to experience problem solving through creation and innovation where invention turns play into lifelong skills.</p>
+        <p class="sans-serif">Teq’s Rube Goldberg Machine iBlocks use the Engineering Design Process and create the foundation that engages and encourages students to experience problem-solving through creation and innovation where invention turns play into lifelong skills.</p>
         <p class="sans-serif">Rube Goldberg Machines prove that your kids are the smartest and most creative people in the world! </p>
         <a href="/rube-goldberg-machine-iblocks" class="button blue-fill">Learn more</a>
       </div>

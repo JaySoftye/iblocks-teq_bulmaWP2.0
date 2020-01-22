@@ -91,6 +91,9 @@
               $c++;
             ?>" data-target="<?php echo $post->ID; ?>" rel="<?php the_permalink();?>"><?php the_title(); ?></li>
           <?php wp_reset_postdata(); endforeach; ?>
+            <li>
+              <!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-de051e9e-d990-44ca-8625-933439d4a2ca"><span class="hs-cta-node hs-cta-de051e9e-d990-44ca-8625-933439d4a2ca" id="hs-cta-de051e9e-d990-44ca-8625-933439d4a2ca"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/182596/de051e9e-d990-44ca-8625-933439d4a2ca"  target="_blank" ><img class="hs-cta-img" id="hs-cta-img-de051e9e-d990-44ca-8625-933439d4a2ca" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/182596/de051e9e-d990-44ca-8625-933439d4a2ca.png"  alt="Download the FREE iBlocks Pathways catalog"/></a></span><script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script><script type="text/javascript"> hbspt.cta.load(182596, 'de051e9e-d990-44ca-8625-933439d4a2ca', {}); </script></span><!-- end HubSpot Call-to-Action Code -->
+            </li>
         </ul>
       <!--
         <p><a id="pathways-catalog-modal-button" class="button quarter-width"  data-target="modal-ter" aria-haspopup="true">Download the iBlocks Pathways Booklet</a></p>

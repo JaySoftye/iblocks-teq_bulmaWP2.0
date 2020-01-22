@@ -35,7 +35,7 @@
     <div class="columns">
       <div class="column is-three-fifths padding-left">
         <h2 class="has-text-right sub-header strong">Want to see what it’s all about?</h2>
-        <p class="has-text-right">In our sample Prosthetic Hand iBlock, students dive into STEM content as they experience the engineering design process first-hand. Their work culminates in the creation of their own prosthetic hand that pulls together their research, guides them through the design process, and fosters important skills like critical thinking and problem-solving. </p>
+        <p class="has-text-right">In our sample Prosthetic Hand iBlock, students dive into STEM content as they experience the Engineering Design Process first-hand. Their work culminates in the creation of their own prosthetic hand that pulls together their research, guides them through the design process, and fosters important skills like critical thinking and problem-solving. </p>
         <p class="has-text-right"><a class="button half-width iblock-modal-button"  data-target="modal-ter" aria-haspopup="true">Download sample</a></p>
       </div>
       <div class="column target-animate">
