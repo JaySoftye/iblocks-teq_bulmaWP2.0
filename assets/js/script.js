@@ -10,6 +10,11 @@ $(document).ready(function() {
     $(".modal.pathways-catalog").toggleClass("is-active");
   });
 
+  $(".pathways-catalog-modal-buttons").click(function(e){
+    e.preventDefault();
+    $(".modal.pathways-catalog").toggleClass("is-active");
+  });
+
   $(".contact-us-modal-button").click(function(e){
     e.preventDefault();
     $(".modal.contact-us").toggleClass("is-active");

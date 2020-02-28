@@ -625,7 +625,7 @@ footer.iblocks-footer svg path, footer.iblocks-footer svg polygon {
   background-image: url('../img/iblocks-footer-iblocks-packages-bg.jpg');
 }
 
-.section.iblocks-page-footer.iblocks-ideas {
+.section.iblocks-page-footer, .section.iblocks-page-footer.iblocks-ideas {
   background-image: url('../img/iblocks-footer-iblocks-ideas-bg.jpg');
 }
 
@@ -734,6 +734,10 @@ footer.iblocks-footer svg path, footer.iblocks-footer svg polygon {
 
 .page-section.rube-goldberg-machine-iblocks {
   background-image: url('../img/rube-goldberg-machine-iblocks-bg.jpg');
+}
+
+.page-section.iblocks-pathway {
+  background-image: url('../img/iblocks-pathway-download-bg.jpg');
 }
 
 .page-section > .container.is-fluid {
