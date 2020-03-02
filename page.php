@@ -41,6 +41,8 @@
       include( get_template_directory() . '/inc/topics-map.php');
       } elseif ( is_page('Sample Collateral') ) {
           include( get_template_directory() . '/inc/sample-collateral.php');
+        } elseif ( is_page('iBlocks Pathways') ) {
+            include( get_template_directory() . '/inc/pathways-confirmation.php');
         } elseif ( is_page('iBlock End-User License Agreement (EULA)') ) {
             include( get_template_directory() . '/inc/ula.php');
           } elseif ( is_page('login') ) {

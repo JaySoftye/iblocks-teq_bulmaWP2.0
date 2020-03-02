@@ -21,7 +21,14 @@
         <script>
           hbspt.forms.create({
            portalId: "182596",
-           formId: "761e00d6-ce4c-4365-b3eb-92be43df7ead"
+           formId: "761e00d6-ce4c-4365-b3eb-92be43df7ead",
+           inlineMessage: 'Thanks for your interest',
+           onFormSubmit: function($form){
+             setTimeout( function() {
+               var formData = $form.serialize();
+               window.location = "https://iblocks.com/iblocks-pathways?" + formData;
+             }, 250 ); // Redirects to url with query string data from form fields after 250 milliseconds.
+           }
           });
         </script>
       </div>

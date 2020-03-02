@@ -20,6 +20,11 @@ $(document).ready(function() {
     $(".modal.contact-us").toggleClass("is-active");
   });
 
+  $(".message-container-empty-space, #close-btn").click(function(e){
+    e.preventDefault();
+    $(".message-container").addClass("hide-large");
+  });
+
   // Check for click events on the navbar burger icon
     $(".navbar-burger").click(function() {
 
