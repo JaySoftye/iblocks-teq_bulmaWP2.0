@@ -135,12 +135,24 @@ function bulmawp_breadcrumbs() {
  */
 
 function bulmawp_enqueue() {
-	wp_enqueue_style( 'bulmawp', get_template_directory_uri() . '/assets/css/shared.css', '', '0.2.2' );
 
-	wp_deregister_script( 'jquery' );
+  wp_deregister_script('bulmawp');
+	wp_enqueue_style( 'bulmawp', get_template_directory_uri() . '/assets/css/shared.css');
 
-	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', '', '3.3.1', true );
-	wp_enqueue_script( 'bulmawp-script', get_template_directory_uri() . '/assets/js/script.js', array( 'jquery' ), '1.0', true );
+  wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js');
+
+  wp_deregister_script('jquery-ui');
+	wp_enqueue_script('jquery-ui', 'https://code.jquery.com/ui/1.12.1/jquery-ui.js');
+
+  wp_deregister_script('jquery-css');
+	wp_enqueue_style('jquery-css', '//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
+
+  wp_deregister_script('ajax-script');
+	wp_enqueue_script('ajax-script', get_template_directory_uri() . '/assets/js/ajax-script.js');
+
+  wp_deregister_script( 'bulmawp-script' );
+	wp_enqueue_script( 'bulmawp-script', get_template_directory_uri() . '/assets/js/script.js');
 
 	if( is_singular() ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -357,9 +369,9 @@ function custom_post_type_state_iblocks() {
 		* is like Posts.
 		*/
 		'public'              => true,
+    'publicly_queryable'  => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
-		'show_in_nav_menus'   => true,
 		'show_in_admin_bar'   => true,
 		'menu_position'       => 6,
     'menu_icon'           => 'dashicons-location-alt',
@@ -367,7 +379,8 @@ function custom_post_type_state_iblocks() {
 		'has_archive'         => true,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
-		'capability_type'     => 'page',
+    'query_var'           => true,
+		'capability_type'     => 'post',
     'taxonomies'          => array('category', 'post_tag'),
 	);
 	// Registering your Custom Post Type
@@ -566,6 +579,115 @@ add_action( 'pre_get_posts', 'category_modify_query_order' );
                         ));
 		}
 		add_action( 'init', 'custom_post_type_iblocks', 0 );
+
+
+
+
+// Script for AJAX Filter Search
+/**
+ * Create new ajax_URL script
+ * Data submitted to new URL
+ **/
+function my_ajax_filter_search_scripts() {
+  wp_enqueue_script( 'my_ajax_filter_search', get_template_directory_uri(). '/assets/js/ajax-script.js', array(), '1.0', true );
+  wp_localize_script( 'my_ajax_filter_search', 'ajax_url', admin_url('admin-ajax.php') );
+}
+function my_ajax_filter_search_shortcode() {
+  my_ajax_filter_search_scripts();
+    ob_start();
+// search form for custom post types
+    ?>
+    <div id="ajax_fitler_search_form_container">
+      <h2 class="sub-header">Ready to get even more inpsired? <br /><strong>Let's find an iBlock Pathway that fits your specific needs.</strong></h2>
+      <form id="my_ajax_filter_search_form" class="ui-widget" action="" method="get">
+        <div id="state-input-container" class="ajax_fitler_search_form_section">
+          <input type="text" name="search" id="search" value="" placeholder="Which state you are from?">
+          <div class="button-control">
+            <a class="submit-button"></a>
+          </div>
+          <p>Press enter to submit or you can <a id="toggleCategory"><u class="strong">search by category here</u></a></p>
+        </div>
+
+        <div id="category-select-container" class="ajax_fitler_search_form_section" style="display: none;">
+          <select id="select" name="select">
+            <option value="" disabled selected>Select your category...</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Applied-Science">Applied Science</option>
+            <option value="Arts">Arts</option>
+            <option value="Business">Business</option>
+            <option value="Energy">Energy</option>
+            <option value="Environment">Environment</option>
+            <option value="Finance">Finance</option>
+            <option value="Health">Health</option>
+            <option value="Mathematics-and-Computer-Science">Math/CS</option>
+            <option value="Transportation">Transportation</option>
+          </select>
+          <a onClick="window.location.reload();"><u><strong>Back to search by state</strong></u></a>
+        </div>
+      </form>
+    </div>
+    <div class="columns is-multiline" id="ajax_fitler_search_results"></div>
+
+    <?php
+    return ob_get_clean();
+}
+add_shortcode ('my_ajax_filter_search', 'my_ajax_filter_search_shortcode');
+
+// Ajax Callback for Search Terms
+add_action('wp_ajax_my_ajax_filter_search', 'my_ajax_filter_search_callback');
+add_action('wp_ajax_nopriv_my_ajax_filter_search', 'my_ajax_filter_search_callback');
+
+function my_ajax_filter_search_callback() {
+    header("Content-Type: application/json");
+
+    if(isset($_GET['search'])) {
+        $search = sanitize_text_field( $_GET['search'] );
+        $search_query = new WP_Query(array(
+            'post_type' => 'stateiblocks',
+            'posts_per_page' => -1,
+            'category_name' => $search
+        ));
+    } else if(isset($_GET['select'])) {
+        $select = sanitize_text_field( $_GET['select'] );
+        $search_query = new WP_Query(array(
+            'post_type' => 'stateiblocks',
+            'posts_per_page' => -1,
+            'category_name' => $select
+        ));
+    } else {
+        $search = 'iblock';
+        $search_query = new WP_Query(array(
+            'post_type' => 'stateiblocks',
+            'posts_per_page' => -1,
+            'category_name' => $search
+        ));
+    }
+
+    if ( $search_query->have_posts() ) {
+        $result = array();
+
+        while ( $search_query->have_posts() ) {
+            $search_query->the_post();
+
+            $result[] = array(
+                "id" => get_the_ID(),
+                "title" => get_the_title(),
+                "content" => get_the_content(),
+                "permalink" => get_permalink(),
+                "poster" => wp_get_attachment_url(get_post_thumbnail_id($post->ID),'full'),
+                "tags" => get_the_tags()
+            );
+        }
+        wp_reset_query();
+        echo json_encode($result);
+    } else {
+        // no posts found
+    }
+    wp_die();
+}
+
+
+
 
 // GET RID OF PRIVATE: IN FRONT OF POST TITLES
 		function the_title_trim($title) {

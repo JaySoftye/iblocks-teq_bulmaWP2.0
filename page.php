@@ -47,6 +47,8 @@
             include( get_template_directory() . '/inc/ula.php');
           } elseif ( is_page('login') ) {
               include( get_template_directory() . '/page-login.php');
+            } elseif ( is_page('Sample Page') ) {
+                include( get_template_directory() . '/inc/test-content.php');
         } else {
 
         if( have_posts() ) : while( have_posts() ) : the_post();

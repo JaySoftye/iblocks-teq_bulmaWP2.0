@@ -10,7 +10,7 @@ get_header(); ?>
 <div class="home-section">
   <div class="container fade-in-container">
     <div class="columns is-vcentered">
-      <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-two-third-fullhd padding blue-background target-animate animated fadeInUp">
+      <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-two-third-fullhd padding-sm blue-background target-animate animated fadeInUp">
         <h1 class="main-header white-text">When students are exposed to rich, immersive learning, there’s no limit to the future interests and careers it can spark.</h1>
         <p><a href="<?php echo get_home_url(); ?>/what-is-an-iblock" class="button white-fill">Learn more</a></p>
       </div>
@@ -100,21 +100,25 @@ get_header(); ?>
   </div>
 </div>
 <div class="section full-width-mobile">
-  <div class="container is-fluid fade-in-container">
-    <div class="columns padding-bottom">
+  <div class="padding is-fluid fade-in-container">
+    <div class="columns is-vcentered">
       <div class="column is-4-desktop padding-sm target-animate-slow hide-medium">
         <p><img src="<?php echo get_template_directory_uri();?>/assets/img/rubegoldberg-section-build-a-chain-reaction.jpg" /></p>
       </div>
       <div class="column is-4-desktop padding-sm target-animate">
         <h2 class="sub-header"><strong>A partnership made in heaven.</strong> </h2>
         <p><img src="<?php echo get_template_directory_uri();?>/assets/img/rubegoldberg-section-partnership-logos.jpg" /></p>
-        <p class="caption sans-serif padding-top">Artwork Copyright © and TM Rube Goldberg Inc.  All Rights Reserved.  All materials used with permission.</p>
       </div>
       <div class="column is-4-deskop padding-sm target-animate-fast">
-        <p class="sans-serif">Rube Goldberg Inc has teamed up with Teq to create a series of Rube Goldberg Machine iBlocks. </p>
-        <p class="sans-serif">Rube Goldberg Machines are silly, complicated, wacky inventions that perform a simple task like flipping a switch or pouring a bowl of cereal.</p>
-        <p class="sans-serif">Teq’s Rube Goldberg Machine iBlocks use the Engineering Design Process and create the foundation that engages and encourages students to experience problem-solving through creation and innovation where invention turns play into lifelong skills.</p>
-        <p class="sans-serif">Rube Goldberg Machines prove that your kids are the smartest and most creative people in the world! </p>
+        <script src="https://fast.wistia.com/embed/medias/qc6wm0d0e8.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_qc6wm0d0e8 popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
+        <h6><br />Meet Jennifer, the granddaughter of the famous Rube Goldberg, and learn about our mission to bring Rube Goldberg Machine fun into every classroom. </h6>
+      </div>
+    </div>
+    <div class="columns padding-bottom">
+      <div class="column padding-left padding-right">
+        <p class="sans-serif"><strong>Rube Goldberg Inc has teamed up with Teq</strong> to create a series of Rube Goldberg Machine iBlocks. </p>
+        <p class="sans-serif">Rube Goldberg Machines are silly, complicated, wacky inventions that perform a simple task like flipping a switch or pouring a bowl of cereal. Teq’s Rube Goldberg Machine iBlocks use the Engineering Design Process and create the foundation that engages and encourages students to experience problem-solving through creation and innovation where invention turns play into lifelong skills. <strong>Rube Goldberg Machines prove that your kids are the smartest and most creative people in the world!</strong></p>
+        <p class="caption sans-serif">Artwork Copyright © and TM Rube Goldberg Inc.  All Rights Reserved.  All materials used with permission.<br /></p>
         <a href="/rube-goldberg-machine-iblocks" class="button blue-fill">Learn more</a>
       </div>
     </div>

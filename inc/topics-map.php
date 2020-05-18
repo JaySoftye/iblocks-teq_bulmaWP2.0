@@ -49,6 +49,25 @@
 </div>
 <div class="after-section-margin"></div>
 
+<div class="section background full-width-mobile grey-background">
+  <div class="container is-fluid">
+
+    <div class="columns is-vcentered is-multiline autocomplete-app posts-area">
+      <div class="column is-12 ui-widget-container padding-bottom">
+        <?php echo do_shortcode("[my_ajax_filter_search]"); ?>
+      </div>
+    </div>
+
+    <div class="columns is-vcentered autocomplete-app" style="display: none;">
+      <div class="column is-12">
+        <h2 class="sub-header strong">Just looking to browse our <u>iBlock ideas by Category?</u> <br />No problem, use the select menu below to select your category.</h2>
+        <p class="toggle-switch">Back to search by state</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <div class="section background full-width-mobile">
   <div class="container is-fluid">
     <div class="columns is-vcentered">
@@ -62,6 +81,7 @@
     </div>
   </div>
 </div>
+
 
 <div class="section full-height full-width-mobile grey-background">
   <div class="container is-fluid">
