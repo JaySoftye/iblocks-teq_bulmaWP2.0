@@ -332,8 +332,8 @@ p {
   display: inline-block;
   margin: .9rem auto 0 auto;
   padding-bottom: calc(1.2em - 1px);
-  padding-left: calc(4.8em - 3%);
-  padding-right: calc(4.8em - 3%);
+  padding-left: calc(3em - 3%);
+  padding-right: calc(3em - 3%);
   padding-top: calc(1.2em - 1px);
   background-color: transparent;
   border: solid;
