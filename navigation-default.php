@@ -35,18 +35,6 @@
     </ul>
   </nav>
 </nav>
-<?php if ( is_front_page() && is_home() ) { ?>
-<article class="message is-primary">
-  <div class="message-header">
-    <div class="columns nomargin">
-      <div class="column is-three-fifths is-offset-one-fifth">
-        <h6 class="white-text has-text-centered"><strong>In light of the COVID-19 pandemic, <a href="https://otis.teq.com/"><strong><u>OTIS for educators</u></strong></a> is making all of their PD courses FREE to help schools implement distance learning and online professional development. <a href="https://www.teq.com/remote-learning/"><strong><u>Click here for info</u></strong></a></strong></h6>
-      </div>
-    </div>
-    <button class="delete" aria-label="delete"></button>
-  </div>
-</article>
-<?php } ?>
 </div>
 
 <div class="contact-us modal">
