@@ -21,7 +21,7 @@
             <ul class="menu-list">
               <li><a href="<?php echo get_home_url(); ?>/what-is-an-iblock">What is an iBlock? »</a></li>
               <li><a href="<?php echo get_home_url(); ?>/iBlocks-impact">iBlocks impact »</a></li>
-              <li><a href="<?php echo get_home_url(); ?>/how-we-create-an-iblock">How we create an iBlock »</a></li>
+              <li><a href="<?php echo get_home_url(); ?>/how-we-create-an-iblock">How we build an iBlock »</a></li>
               <li><a href="<?php echo get_home_url(); ?>/iblocks-packages">iBlocks packages »</a></li>
               <li><a href="<?php echo get_home_url(); ?>/iblocks-ideas">iBlocks ideas »</a></li>
               <li><a class="contact-us-modal-button">Contact us »</a></li>
