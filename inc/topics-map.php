@@ -71,12 +71,9 @@
 <div class="section background full-width-mobile">
   <div class="container is-fluid">
     <div class="columns is-vcentered">
-      <div class="column is-8">
+      <div class="column is-12">
         <h2 class="sub-header strong">Explore our pathways </h2>
         <p>Discover the iBlocks we’ve imagined and see how they align to relevant state standards.  Have a specific standard, subject, or project in mind? Let us know! An iBlock can be customized for your interests, goals, and needs. </p>
-      </div>
-      <div class="column hot-pink-background padding-sm">
-        <h4 class="white-text small-header strong">Choose an iBlock from our pathways list and receive a 10% discount on your purchase!</h4>
       </div>
     </div>
   </div>
