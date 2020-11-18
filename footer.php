@@ -105,7 +105,7 @@
         </div>
         <div class="columns">
           <div class="column">
-            <p class="has-text-centered"><strong>iBlocks are the intellectual property of Teq, read our <a target="_blank" href="iblock-end-user-license-agreement-eula-terms/"><u><strong>terms and conditions</u></strong></a> for more information.</strong></p>
+            <p class="has-text-centered"><strong>iBlocks are the intellectual property of Teq, read our <a target="_blank" href="iblock-end-user-license-agreement-eula-terms/"><u><strong>terms and conditions</u></strong></a> for more information.</strong> <a target="_blank" href="teq-privacy-policy/"><u><strong>Privacy Policy</u></strong></p>
           </div>
         </div>
       </div>
