@@ -21,7 +21,7 @@
             <ul class="menu-list">
               <li><a href="<?php echo get_home_url(); ?>/what-is-an-iblock">What is an iBlock? »</a></li>
               <li><a href="<?php echo get_home_url(); ?>/iBlocks-impact">iBlocks impact »</a></li>
-              <li><a href="<?php echo get_home_url(); ?>/how-we-create-an-iblock">How we build an iBlock »</a></li>
+              <li><a href="<?php echo get_home_url(); ?>/how-we-build-an-iblock">How we build an iBlock »</a></li>
               <li><a href="<?php echo get_home_url(); ?>/iblocks-packages">iBlocks packages »</a></li>
               <li><a href="<?php echo get_home_url(); ?>/iblocks-ideas">iBlocks ideas »</a></li>
               <li><a class="contact-us-modal-button">Contact us »</a></li>
@@ -237,7 +237,7 @@
         </div>
         <div class="columns">
           <div class="column">
-            <p class="has-text-centered"><strong>iBlocks are the intellectual property of Teq, read our <a target="_blank" href="iblock-end-user-license-agreement-eula-terms/"><u><strong>terms and conditions</u></strong></a> for more information.</strong></p>
+            <p class="has-text-centered"><strong>iBlocks are the intellectual property of Teq.</strong> Read our <a target="_blank" href="iblock-end-user-license-agreement-eula-terms/"><u>terms and conditions</u></a>, <a target="_blank" href="teq-privacy-policy/"><u>privacy policy</u></a> for more information.</p>
           </div>
         </div>
       </div>

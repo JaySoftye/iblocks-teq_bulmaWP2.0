@@ -577,10 +577,13 @@ add_action( 'pre_get_posts', 'category_modify_query_order' );
                             "type" => "string",
                             "show_in_rest" => true
                         ));
+                        register_meta('post', 'implementation-video-link', array(
+                            "object_subtype" => "iblocks",
+                            "type" => "string",
+                            "show_in_rest" => true
+                        ));
 		}
 		add_action( 'init', 'custom_post_type_iblocks', 0 );
-
-
 
 
 // Script for AJAX Filter Search
@@ -725,7 +728,7 @@ function my_ajax_filter_search_callback() {
          $meta_element_class = get_post_meta($post->ID, 'custom_element_grid_class_meta_box', true); //true ensures you get just one value instead of an array
        ?>
           <select name="custom_element_grid_class" id="custom_element_grid_class">
-      			<option value="default" <?php selected( $meta_element_class, 'default' ); ?>>--</option>
+      			<option value="default" <?php selected( $meta_element_class, '-' ); ?>>--</option>
       	    <option value="IBF 10" <?php selected( $meta_element_class, 'IBF 10' ); ?>>iBlock Foundation 10</option>
       		  <option value="IBF 25" <?php selected( $meta_element_class, 'IBF 25' ); ?>>iBlock Foundation 25</option>
       		  <option value="IBF 37" <?php selected( $meta_element_class, 'IBF 37' ); ?>>iBlock Foundation 37</option>

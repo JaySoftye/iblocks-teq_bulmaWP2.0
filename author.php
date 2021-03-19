@@ -38,7 +38,7 @@ $user = wp_get_current_user();
     </div>
     <div class="navbar-menu">
       <div class="navbar-end">
-        <div class="navbar-item search">
+        <div class="navbar-item search" style="display:none;">
           <input class="input" type="text" placeholder="Find an iBlock">
         </div>
         <div class="navbar-item contact">
@@ -131,6 +131,7 @@ $user = wp_get_current_user();
                       $studentAssessment = get_post_meta( $post->ID, 'student-assessment-link', true );
                       $rubric = get_post_meta( $post->ID, 'rubric-link', true );
                       $lessonPlan = get_post_meta( $post->ID, 'lesson-plan-link', true );
+                      $implementationVideo = get_post_meta( $post->ID, 'implementation-video-link', true );
 
                   ?>
 
@@ -189,7 +190,14 @@ $user = wp_get_current_user();
                     <td><a href="<?php echo $lessonPlan; ?>/<?php echo $user->ID; ?>">Lesson Plan</a></td>
                     <td><a href="<?php echo $lessonPlan; ?>/<?php echo $user->ID; ?>">Download</a></td>
                   </tr>
-                  <?php } endwhile; wp_reset_postdata(); else:  ?>
+                <?php } if( !empty($implementationVideo) ) { ?>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <td><a href="<?php echo $implementationVideo; ?>">Implementation Video</a></td>
+                    <td><a href="<?php echo $implementationVideo; ?>">Download</a></td>
+                  </tr>
+                   <?php } endwhile; wp_reset_postdata(); else:  ?>
 
                     <tr class="iblock-table-title">
                       <th>-</th>
@@ -331,6 +339,7 @@ $user = wp_get_current_user();
                      $studentAssessment = get_post_meta( $post->ID, 'student-assessment-link', true );
                      $rubric = get_post_meta( $post->ID, 'rubric-link', true );
                      $lessonPlan = get_post_meta( $post->ID, 'lesson-plan-link', true );
+                     $implementationVideo = get_post_meta( $post->ID, 'implementation-video-link', true );
 
                  ?>
 
@@ -388,6 +397,13 @@ $user = wp_get_current_user();
                     <th></th>
                     <td><a href="<?php echo $lessonPlan; ?>/<?php echo $user->ID; ?>">Lesson Plan</a></td>
                     <td><a href="<?php echo $lessonPlan; ?>/<?php echo $user->ID; ?>">Download</a></td>
+                  </tr>
+                <?php } if( !empty($implementationVideo) ) { ?>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <td><a href="<?php echo $implementationVideo; ?>">Implementation Video</a></td>
+                    <td><a href="<?php echo $implementationVideo; ?>">Download</a></td>
                   </tr>
                   <?php } endwhile; wp_reset_postdata(); else:  ?>
 
