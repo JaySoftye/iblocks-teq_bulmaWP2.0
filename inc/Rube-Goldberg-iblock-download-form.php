@@ -21,7 +21,22 @@
         <script>
           hbspt.forms.create({
            portalId: "182596",
-           formId: "761e00d6-ce4c-4365-b3eb-92be43df7ead"
+           formId: "761e00d6-ce4c-4365-b3eb-92be43df7ead",
+           onFormSubmit: function($form) {
+             function gtag_report_conversion(url) {
+               var callback = function () {
+                 if (typeof(url) != 'undefined') {
+                   window.location = url;
+                 }
+               };
+               gtag('event', 'conversion', {
+                 'send_to': 'AW-677760146/bdwuCKmdkPwBEJKZl8MC',
+                 'event_callback': callback
+               });
+               return false;
+             }
+             console.log('submitted');
+           }
           });
         </script>
       </div>

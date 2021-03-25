@@ -18,6 +18,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css">
     <!-- Adobe Museo Slab font -->
     <link rel="stylesheet" href="https://use.typekit.net/yal1ewy.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67374790-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-67374790-4');
+      gtag('config', 'AW-677760146');
+    </script>
   </head>
   <body <?php body_class(); ?>>
 
