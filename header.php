@@ -23,11 +23,53 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('set', 'allow_ad_personalization_signals', false);
       gtag('js', new Date());
 
       gtag('config', 'UA-67374790-4');
       gtag('config', 'AW-677760146');
     </script>
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-677760146/bdwuCKmdkPwBEJKZl8MC',
+            'event_callback': callback
+        });
+        return false;
+        }
+
+        function gtag_report_conversion_rube(url) {
+          var callback = function () {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+            'send_to': 'AW-677760146/Jw1xCN_Dz_0BEJKZl8MC',
+            'event_callback': callback
+          });
+          return false;
+        }
+
+        function gtag_report_conversion_prosthetic(url) {
+          var callback = function () {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+            'send_to': 'AW-677760146/kETICLDQz_0BEJKZl8MC',
+            'event_callback': callback
+          });
+          return false;
+        }
+    </script>
+
   </head>
   <body <?php body_class(); ?>>
 

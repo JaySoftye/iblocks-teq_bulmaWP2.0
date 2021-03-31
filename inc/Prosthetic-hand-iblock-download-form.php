@@ -23,14 +23,14 @@
 	          portalId: "182596",
 	          formId: "ec124d6b-6f1f-47a8-8acb-ccfc7eac4120",
             onFormSubmit: function($form) {
-              function gtag_report_conversion(url) {
+              function gtag_report_conversion_prosthetic(url) {
                 var callback = function () {
                   if (typeof(url) != 'undefined') {
                     window.location = url;
                   }
                 };
                 gtag('event', 'conversion', {
-                  'send_to': 'AW-677760146/bdwuCKmdkPwBEJKZl8MC',
+                  'send_to': 'AW-677760146/kETICLDQz_0BEJKZl8MC',
                   'event_callback': callback
                 });
                 return false;

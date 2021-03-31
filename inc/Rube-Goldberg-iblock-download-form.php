@@ -23,7 +23,7 @@
            portalId: "182596",
            formId: "761e00d6-ce4c-4365-b3eb-92be43df7ead",
            onFormSubmit: function($form) {
-             function gtag_report_conversion(url) {
+             function gtag_report_conversion_rube(url) {
                var callback = function () {
                  if (typeof(url) != 'undefined') {
                    window.location = url;
