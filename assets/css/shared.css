@@ -4077,7 +4077,7 @@ a.box:active {
 }
 
 .field.is-grouped > .control:not(:last-child) {
-  margin-bottom: 0;
+  margin-bottom: 12px;
   margin-right: 0.75rem;
 }
 

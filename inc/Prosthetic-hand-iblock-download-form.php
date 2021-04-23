@@ -10,7 +10,7 @@
 <div class="iblock modal">
   <div class="modal-background"></div>
   <div class="modal-content">
-    <div class="columns">
+    <div class="columns nomargin">
       <div class="column padding white-background">
         <h3 class="sub-header strong blue-text">Download a sample Prosthetic Hand iBlock using the form below.</h3>
         <br />

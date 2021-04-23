@@ -363,13 +363,15 @@ function custom_post_type_state_iblocks() {
 		'description'         => __( 'stateiblocks', 'iblocks-teq_bulmaWP' ),
 		'labels'              => $labels,
 		// Features this CPT supports in Post Editor
-		'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'revisions',),
+		'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'revisions','excerpt'),
 		/* A hierarchical CPT is like Pages and can have
 		* Parent and child items. A non-hierarchical CPT
 		* is like Posts.
 		*/
 		'public'              => true,
-    'publicly_queryable'  => true,
+    'show_in_rest'       => true,
+    'rest_base'          => 'stateiblocks',
+    'rest_controller_class' => 'WP_REST_Posts_Controller',
 		'show_ui'             => true,
 		'show_in_menu'        => true,
 		'show_in_admin_bar'   => true,
@@ -567,12 +569,12 @@ add_action( 'pre_get_posts', 'category_modify_query_order' );
                             "type" => "string",
                             "show_in_rest" => true
                         ));
-                        register_meta('post', 'rubric-link', array(
+                        register_meta('post', 'st-selfassessment-link', array(
                             "object_subtype" => "iblocks",
                             "type" => "string",
                             "show_in_rest" => true
                         ));
-                        register_meta('post', 'lesson-plan-link', array(
+                        register_meta('post', 'lesson-plans-link', array(
                             "object_subtype" => "iblocks",
                             "type" => "string",
                             "show_in_rest" => true

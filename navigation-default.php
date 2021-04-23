@@ -2,8 +2,9 @@
 
 <nav class="navbar mainnav" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="<?php echo get_home_url(); ?>">
+    <a class="navbar-item brand-logo" href="<?php echo get_home_url(); ?>">
       <img src="<?php echo get_template_directory_uri();?>/assets/img/brand_logo.svg" width="252" height="96">
+      <h1>Project-Based Learning</h1>
     </a>
     <a role="button" class="navbar-burger burger" aria-label="menu">
       <span aria-hidden="true"></span>
@@ -18,7 +19,7 @@
       <a href="<?php echo get_site_url(); ?>/iblocks-impact" class="navbar-item <?php if (is_page("iBlocks impact")) { ?> selected <?php } ?>">iBlocks impact</a>
       <a href="<?php echo get_site_url(); ?>/how-we-build-an-iblock" class="navbar-item <?php if (is_page("How we build an iBlock")) { ?> selected <?php } ?>">How we build an iBlock</a>
       <a href="<?php echo get_site_url(); ?>/iblocks-packages" class="navbar-item <?php if (is_page("iBlocks packages")) { ?> selected <?php } ?>">iBlocks packages</a>
-      <a href="<?php echo get_site_url(); ?>/iblocks-ideas" class="navbar-item rubegoldberg <?php if (is_page("iBlocks ideas")) { ?> selected <?php } ?>">iBlocks ideas
+      <a href="<?php echo get_site_url(); ?>/iblocks-ideas" class="navbar-item rubegoldberg <?php if (is_page("iBlocks ideas")) { ?> selected <?php } ?>">iBlocks Solutions
         <img src="<?php echo get_template_directory_uri();?>/assets/img/rubegoldberg-brand_logo.png" />
       </a>
       <a class="navbar-item contact-us-modal-button">Contact us</a>
@@ -30,7 +31,7 @@
       <li><a href="<?php echo get_site_url(); ?>/iblocks-impact" class="navbar-item <?php if (is_page("iBlocks impact")) { ?> selected <?php } ?>">iBlocks impact</a></li>
       <li><a href="<?php echo get_site_url(); ?>/how-we-build-an-iblock" class="navbar-item <?php if (is_page("How we build an iBlock")) { ?> selected <?php } ?>">How we build an iBlock</a></li>
       <li><a href="<?php echo get_site_url(); ?>/iblocks-packages" class="navbar-item <?php if (is_page("iBlocks packages")) { ?> selected <?php } ?>">iBlocks packages</a></li>
-      <li><a href="<?php echo get_site_url(); ?>/iblocks-ideas" class="navbar-item rubegoldberg <?php if (is_page("iBlocks ideas")) { ?> selected <?php } ?>">iBlocks ideas</a></li>
+      <li><a href="<?php echo get_site_url(); ?>/iblocks-ideas" class="navbar-item rubegoldberg <?php if (is_page("iBlocks ideas")) { ?> selected <?php } ?>">iBlocks solutions</a></li>
       <li><a class="navbar-item contact-us-modal-button">Contact us</a></li>
     </ul>
   </nav>
@@ -40,7 +41,7 @@
 <div class="contact-us modal">
   <div class="modal-background"></div>
   <div class="modal-content">
-    <div class="columns">
+    <div class="columns nomargin">
       <div class="column padding white-background">
         <h3 class="small-header strong blue-text">Send us a message and our PD Curriculum Team will reach out to you directly or call us toll free at 877.455.9369.</h3>
         <br />

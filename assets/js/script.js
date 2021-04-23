@@ -196,6 +196,84 @@ $(document).ready(function() {
         $(".modal").removeClass("is-active");
     });
 
+
+
+    /* JQUERY FUNCTION TO FILTER IBLOCK PATHWAYS BY CATEGORY */
+    // TARGET SELECT MENU ELEMENT WITH CLASS 'category-filter'
+    // GATHER VARIABLES TO HOLD VALUE ATTRIBUTE AS a element of Class..
+    // IF 'all-categories' OPTION IS SELECTED SHOW ALL ELEMENTS 'article.iblock-pathways' OF THE category CLASS SELECTED
+    $('select.iblock-pathways-filter.category-filter').on('change', function() {
+      var categoryValue = '.' + $(this).val();
+      var gradeOption = $('select.iblock-pathways-filter.grade-level-filter option:checked');
+      var gradeOptionValue = '.' + $(gradeOption).val();
+      var careerOption = $('select.iblock-pathways-filter.career-filter option:checked');
+      var careerOptionValue = '.' + $(careerOption).val();
+      var targetValue = categoryValue + gradeOptionValue + careerOptionValue;
+
+        $('.iblock-post-container article.iblock-pathways').each(function() {
+          if($(this).is(targetValue)) {
+              $(this).stop().show(420);
+          } else {
+              $(this).stop().hide(420);
+          }
+        });
+      console.log(targetValue);
+    });
+    /* JQUERY FUNCTION TO FILTER IBLOCK PATHWAYS BY CATEGORY */
+    // TARGET SELECT MENU ELEMENT WITH CLASS 'grade-level-filter'
+    // GATHER VARIABLES TO HOLD VALUE ATTRIBUTE AS a element of Class..
+    // IF 'all-grade-level' OPTION IS SELECTED SHOW ALL ELEMENTS 'article.iblock-pathways' OF THE grade CLASS SELECTED
+    $('select.iblock-pathways-filter.grade-level-filter').on('change', function() {
+      var gradeValue = '.' + $(this).val();
+      var categoryOption = $('select.iblock-pathways-filter.category-filter option:checked');
+      var categoryOptionValue = '.' + $(categoryOption).val();
+      var careerOption = $('select.iblock-pathways-filter.career-filter option:checked');
+      var careerOptionValue = '.' + $(careerOption).val();
+      var targetValue = gradeValue + categoryOptionValue + careerOptionValue;
+
+        $('.iblock-post-container article.iblock-pathways').each(function() {
+          if($(this).is(targetValue)) {
+              $(this).stop().show(420);
+          } else {
+              $(this).stop().hide(420);
+          }
+        });
+      console.log(targetValue);
+    });
+    /* JQUERY FUNCTION TO FILTER IBLOCK PATHWAYS BY CAREER INDUSTRY */
+    // TARGET SELECT MENU ELEMENT WITH CLASS 'grade-level-filter'
+    // GATHER VARIABLES TO HOLD VALUE ATTRIBUTE AS a element of Class..
+    // IF 'all-grade-level' OPTION IS SELECTED SHOW ALL ELEMENTS 'article.iblock-pathways' OF THE career CLASS SELECTED
+    $('select.iblock-pathways-filter.career-filter').on('change', function() {
+      var careerValue = '.' + $(this).val();
+      var categoryOption = $('select.iblock-pathways-filter.category-filter option:checked');
+      var categoryOptionValue = '.' + $(categoryOption).val();
+      var gradeOption = $('select.iblock-pathways-filter.grade-level-filter option:checked');
+      var gradeOptionValue = '.' + $(gradeOption).val();
+      var targetValue = careerValue + categoryOptionValue + gradeOptionValue;
+
+        $('.iblock-post-container article.iblock-pathways').each(function() {
+          if($(this).is(targetValue)) {
+              $(this).show(420);
+          } else {
+              $(this).hide(420);
+          }
+        });
+      console.log(targetValue);
+    });
+
+    /* JQUERY FUNCTION TO SET IBLOCK PATHWAY TITLE PARAMETERS  */
+      // TARGET TITLE SPAN IN PRICING FORM AND SET
+        // TARGET HUBSPOT INPUT ELEMENT AND SET TITLE
+    $(document).on( 'click', 'button.purchase.purchase-button.static', function() {
+      var iBlockPathwayTitle = $(this).attr('data-title');
+      $('span#iblock-pricing-form-title-selected').html(iBlockPathwayTitle);
+        $('input#iblock-pathways-selected-title').val(iBlockPathwayTitle);
+    });
+
+
+
+
 });
 
 /* Check when the sticky top border reaches the top of the window, when it does add class condensed */

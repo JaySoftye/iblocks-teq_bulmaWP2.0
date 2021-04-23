@@ -38,7 +38,7 @@
     }
 
     if ( is_page('iBlocks ideas') ) {
-      include( get_template_directory() . '/inc/topics-map.php');
+      include( get_template_directory() . '/inc/topics-map2.php');
       } elseif ( is_page('Sample Collateral') ) {
           include( get_template_directory() . '/inc/sample-collateral.php');
         } elseif ( is_page('iBlocks Pathways') ) {
@@ -47,7 +47,7 @@
             include( get_template_directory() . '/inc/ula.php');
           } elseif ( is_page('login') ) {
               include( get_template_directory() . '/page-login.php');
-            } elseif ( is_page('Sample Page') ) {
+            } elseif ( is_page('Test Page') ) {
                 include( get_template_directory() . '/inc/test-content.php');
         } else {
 

@@ -8,48 +8,93 @@
 get_header(); ?>
 
 <div class="home-section">
-  <div class="container fade-in-container">
+  <div class="container is-fluid fade-in-container">
     <div class="columns is-vcentered">
-      <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-two-third-fullhd padding-sm blue-background target-animate animated fadeInUp">
-        <h1 class="main-header white-text">When students are exposed to rich, immersive learning, there’s no limit to the future interests and careers it can spark.</h1>
-        <p><a href="<?php echo get_home_url(); ?>/what-is-an-iblock" class="button white-fill">Learn more</a></p>
+      <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-two-third-fullhd padding-left target-animate animated fadeInUp">
+        <h1 class="main-header white-text"><span></span>Experiential Learning</h1>
       </div>
-      <h4 class="floating-text bottom white-text target-animate animated fadeInUp">future<br />environmental<br />scientist</h4>
+      <h4 class="floating-text right white-text target-animate animated fadeInUp">future<br />environmental<br />scientist</h4>
     </div>
   </div>
 </div>
 <div class="full-after-section-margin"></div>
 <div class="section full-width-mobile">
+  <h2 class="main-header-tagline drop-shadow">Students succeed when they take ownership of their learning</h2>
   <div class="container is-fluid fade-in-container">
-    <div class="columns">
-      <div class="column is-two-fifths padding-left">
-        <h2 class="has-text-right sub-header strong">Introducing<br />iBlocks</h2>
-        <p class="has-text-right">An iBlock, or “instructional block,” is a customizable project-based learning solution built to foster critical thinking, <span class="strong">spark</span> creativity, and give students the opportunity to practice 21st century skills.</p>
-        <script src="https://fast.wistia.com/embed/medias/sibycazjbw.jsonp" async></script>
-        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-        <div class="wistia_responsive_padding hover-button" style="position:relative;">
-          <div class="wistia_responsive_wrapper">
-            <span class="wistia_embed wistia_async_sibycazjbw popover=true popoverAnimateThumbnail=true popoverContent=link videoFoam=true" style="display:inline;position:relative">
-              <p class="has-text-right"><a href="" class="button half-width">Play video</a></p>
-            </span>
-          </div>
+    <div class="columns is-center is-vcentered padding-top">
+      <div class="column is-half">
+        <img src="../wp-content/uploads/2020/01/iblock-essential.png">
+      </div>
+      <div class="column is-half">
+        <h2 class="sub-header strong">Introducing iBlocks</h2>
+        <p>An iBlock is a 10-part sequence of student-led, teacher-guided lessons and activities that center on technology and culminate in a capstone project.</p>
+        <p>Students drive the learning and tackle the project as a team, while the teacher facilitates, providing guidance and coaching as students engage in skills-building, career-based exploration.  </p>
+      </div>
+    </div>
+    <div class="column is-full">
+      <p class="has-text-centered margin-top">
+        <a href="/iblocks-ideas" class="btn">
+        <span class="text">Start Exploring Today</span>
+        <span class="flip-front">Start exploring today</span>
+        <span class="flip-back">View our iBlock solutions</span>
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="section full-width-mobile why-iblocks">
+  <div class="container is-fluid fade-in-container">
+    <div class="columns padding-bottom is-vcentered">
+      <div class="column is-one-third is-offset-one-third">
+        <h2 class="has-text-centered sub-header"><strong>Why iBlocks?</strong></h2>
+      </div>
+    </div>
+    <div class="columns is-multiline padding-sm-left-right">
+      <div class="column is-one-third-desktop is-half-tablet target-animate">
+        <div class="padding-sm white-background-fill full-height-100">
+          <p class="has-text-centered"><img src="<?php echo get_template_directory_uri();?>/assets/img/school-icon.svg" /></p>
+          <h3 class="has-text-centered small-header"><strong>School Benefit</strong></h3>
+          <p class="has-text-centered sans-serif">Bring STEM into the classroom with activities that excite students, take the pressure off teachers, and align to important learning standards.</p>
+          <p class="has-text-centered margin-top">
+            <a href="/iblocks-impact" class="btn">
+            <span class="text">Learn more</span>
+            <span class="flip-front">Learn more</span>
+            <span class="flip-back">About school benefits</span>
+            </a>
+          </p>
         </div>
       </div>
-      <div class="column target-animate">
-        <script src="https://fast.wistia.com/embed/medias/sibycazjbw.jsonp" async></script>
-        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-        <div class="wistia_responsive_padding hover-button" style="position:relative;">
-          <div class="wistia_responsive_wrapper">
-            <span class="wistia_embed wistia_async_sibycazjbw popover=true popoverAnimateThumbnail=true popoverContent=link videoFoam=true" style="display:inline;position:relative">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/introducing-iblocks-video.jpg" />
-            </span>
-          </div>
+      <div class="column is-one-third-desktop is-half-tablet target-animate-fast">
+        <div class="padding-sm white-background-fill full-height-100">
+          <p class="has-text-centered"><img src="<?php echo get_template_directory_uri();?>/assets/img/teacher-icon.svg" /></p>
+          <h3 class="has-text-centered small-header"><strong>Teacher Benefit</strong></h3>
+          <p class="has-text-centered sans-serif">Put the “wow” back into STEM learning with project-based activities that engage students in critical thinking, teamwork, and fun.</p>
+          <p class="has-text-centered margin-top">
+            <a href="/iblocks-impact" class="btn">
+            <span class="text">Learn more</span>
+            <span class="flip-front">Learn more</span>
+            <span class="flip-back">About teacher benefits</span>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="column is-one-third-desktop is-half-tablet target-animate-slow">
+        <div class="padding-sm white-background-fill full-height-100">
+          <p class="has-text-centered"><img src="<?php echo get_template_directory_uri();?>/assets/img/student-icon.svg" /></p>
+          <h3 class="has-text-centered small-header"><strong>Student Benefit</strong></h3>
+          <p class="has-text-centered sans-serif">Provide students with hands-on learning that puts them in the lead as they investigate, explore, and create!</p>
+          <p class="has-text-centered margin-top">
+            <a href="/iblocks-impact" class="btn">
+            <span class="text">Learn more</span>
+            <span class="flip-front">Learn more</span>
+            <span class="flip-back">About student benefits</span>
+            </a>
+          </p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <div class="section full-width-mobile grey-background">
   <div class="container is-fluid fade-in-container">
     <div class="columns">
@@ -57,44 +102,29 @@ get_header(); ?>
         <h2 class="has-text-centered sub-header"><strong>Authentic learning to last a lifetime</strong></h2>
       </div>
     </div>
-    <div class="columns padding-left padding-right">
-      <div class="column is-one-third padding-left padding-right target-animate-slow">
-        <p class="has-text-centered"><img src="<?php echo get_template_directory_uri();?>/assets/img/02_transform.png" /></p>
-        <p class="has-text-centered"><strong>Ready to transform your classroom into a collaborative discovery space where students learn by doing?</strong></p>
+    <div class="columns padding-sm-left-right">
+      <div class="column is-one-third padding-sm-left-right target-animate-slow">
+        <p class="has-text-centered"><img src="<?php echo get_template_directory_uri();?>/assets/img/02_transform.svg" /></p>
+        <p class="has-text-centered"><bold>Ready to transform your classroom into a collaborative discovery space where students learn by doing?</bold></p>
       </div>
-      <div class="column is-one-third padding-left padding-right target-animate">
-        <p class="has-text-centered"><img src="<?php echo get_template_directory_uri();?>/assets/img/02_create.png" /></p>
-        <p class="has-text-centered"><strong>Need a creative way to address state standards around STEM and Computer Science?</strong></p>
+      <div class="column is-one-third padding-sm-left-right target-animate">
+        <p class="has-text-centered"><img src="<?php echo get_template_directory_uri();?>/assets/img/02_create.svg" /></p>
+        <p class="has-text-centered"><bold>Need a creative way to address state standards around STEM and Computer Science?</bold></p>
       </div>
-      <div class="column is-one-third padding-left padding-right target-animate-fast">
-        <p class="has-text-centered"><img src="<?php echo get_template_directory_uri();?>/assets/img/02_spark.png" /></p>
-        <p class="has-text-centered"><strong>Looking for a way to spark your students’ engagement in STEM and inspire a future career?</strong></p>
+      <div class="column is-one-third padding-sm-left-right target-animate-fast">
+        <p class="has-text-centered"><img src="<?php echo get_template_directory_uri();?>/assets/img/02_spark.svg" /></p>
+        <p class="has-text-centered"><bold>Looking for a way to spark your students’ engagement in STEM and inspire a future career?</bold></p>
       </div>
     </div>
     <div class="columns">
       <div class="column is-one-third is-offset-one-third">
-        <p class="has-text-centered"><a href="/iblocks-impact" class="button">Learn more</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section full-width-mobile why-iblocks">
-  <div class="container is-fluid fade-in-container">
-    <div class="columns padding-bottom">
-      <div class="column is-one-third is-offset-one-third">
-        <h2 class="has-text-centered sub-header"><strong>Why iBlocks?</strong></h2>
-      </div>
-    </div>
-    <div class="columns padding-left padding-right">
-      <div class="column is-one-third-desktop is-half-tablet padding-sm white-background target-animate">
-        <h3 class="has-text-centered small-header"><strong>Student Impact</strong></h3>
-        <p class="has-text-centered sans-serif">An iBlock provides a cross-curricular, holistic learning approach, so students can benefit from an environment that supports deep and lasting understanding. </p>
-        <p class="has-text-centered"><a href="/iblocks-impact" class="button">Learn more</a></p>
-      </div>
-      <div class="column is-one-third-desktop is-offset-one-third-desktop is-half-tablet padding-sm white-background target-animate-slow">
-        <h3 class="has-text-centered small-header"><strong>School Benefit</strong></h3>
-        <p class="has-text-centered sans-serif">Because an iBlock is built according to your specifications, it leads to better and brighter integration of STEM into a student’s daily instruction — and life. </p>
-        <p class="has-text-centered"><a href="/iblocks-impact" class="button">Learn more</a></p>
+        <p class="has-text-centered margin-top">
+          <a href="/iblocks-impact" class="btn">
+          <span class="text">Start Exploring Today</span>
+          <span class="flip-front">Start exploring today</span>
+          <span class="flip-back">View our iBlock solutions</span>
+          </a>
+        </p>
       </div>
     </div>
   </div>

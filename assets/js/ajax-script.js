@@ -155,6 +155,65 @@ $(document).ready(function() {
     });
 
 
+    // CLICK FUNCTION FOR 'button.back-button' Element
+    // DETAILS CONTAINER '#iblock-pathway-details-container' CLOSE AND EMPTY onClick
+    $(document).on( 'click', 'button.back-button', function() {
+      // TARGET article#iblock-pathway-details-container ELEMENT
+        // REMOVE Class 'is-active' to ENABLE VIEWABLE ELEMENT
+          //EMPTY CONTENTS OF TARGETED ID's
+      $('.iblock-post-container #iblock-pathway-details-container').removeClass('is-active');
+        $('#iblock-pathway-details-container #dataTitle').empty();
+          $('#iblock-pathway-details-container #dataContent').empty();
+    });
+
+    // CLICK FUNCTION FOR 'button.learn' Element
+    // SET '#iblock-pathway-details-container' ELEMENT with addClass 'is-active' TO ENABLE VIEWABLE
+    // SCROLL TO ELEMENT and SEND AJAX request
+    // GATHER DATA WITH REST API TO SEND BACK INFO FROM URL BASED ON post ID
+    // INITIAL LOADER FOR REQUEST LOAD - APPEND DATA TO ELEMENTS BASED ON REQUEST data
+    $(document).on( 'click', 'button.learn', function() {
+      // TARGET article#iblock-pathway-details-container ELEMENT
+        // ADD Class 'is-active' to ENABLE VIEWABLE ELEMENT
+          //EMPTY CONTENTS OF TARGETED ID's
+      $('.iblock-post-container #iblock-pathway-details-container').addClass('is-active');
+        $('#iblock-pathway-details-container #dataTitle').empty();
+          $('#iblock-pathway-details-container #dataContent').empty();
+      // Body Element Scroll TO ARTICLE.iblock-pathway-details-container
+      $('html,body').animate({
+        scrollTop: $('#iblock-pathway-details-container').offset().top - 100
+      }, 480);
+      // AJAX REQUEST FROM WP-JSON ELEMENT; URL BASED ON POST ID
+      // ADD PRELOADER IMAGE FOR LOAD TIME
+      var post_id = $(this).attr('id');
+      var request = $.ajax({
+        url : '/wp-json/wp/v2/stateiblocks/'+post_id,
+        method: "GET",
+        dataType: "json",
+        beforeSend: function(){
+          // Show image container
+          $("#loader").show();
+        },
+      });
+      // APPEND DATA FROM JSON DATA REQUEST
+        // SET IBLOCK FORM TITLE
+          // SET HIDDEN INPUT FIELD TO SELECTED IBLOCK PATHWAY TITLE
+      request.done(function( data ) {
+        // Hide image container
+        $("#loader").hide();
+          console.log(data);
+        $('#iblock-pathway-details-container #dataTitle').html(data.title.rendered);
+          $('#iblock-pathway-details-container #dataContent').html(data.content.rendered);
+            $('span#iblock-pricing-form-title-selected').html(data.title.rendered);
+              $('input#iblock-pathways-selected-title').val(data.title.rendered);
+      });
+
+    request.fail(function( jqXHR, textStatus ) {
+        console.log('fail')
+    });
+    return false;
+});
+
+
 
 
 });

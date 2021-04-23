@@ -118,7 +118,7 @@ $user = wp_get_current_user();
 
               <?php
 
-                $args = array( 'post_type' => 'iblocks', 'posts_per_page' => -1, 'order' => 'ASC', 'meta_key' => 'bp-code', 'meta_value' => get_user_meta($user->ID,'CardCode',true) );
+                $args = array( 'post_type' => 'iblocks', 'posts_per_page' => -1, 'order' => 'DESC', 'meta_key' => 'bp-code', 'meta_value' => get_user_meta($user->ID,'CardCode',true) );
                 $the_query = new WP_Query( $args );
 
                   if ( $the_query->have_posts() ) :
@@ -128,9 +128,8 @@ $user = wp_get_current_user();
                       $skillsMatrix = get_post_meta( $post->ID, 'skills-matrix-link', true );
                       $studentWorkbook = get_post_meta( $post->ID, 'student-workbook-link', true );
                       $teacherGuide = get_post_meta( $post->ID, 'teachers-guide-link', true );
-                      $studentAssessment = get_post_meta( $post->ID, 'student-assessment-link', true );
-                      $rubric = get_post_meta( $post->ID, 'rubric-link', true );
-                      $lessonPlan = get_post_meta( $post->ID, 'lesson-plan-link', true );
+                      $studentAssessment = get_post_meta( $post->ID, 'st-selfassessment-link', true );
+                      $lessonPlan = get_post_meta( $post->ID, 'lesson-plans-link', true );
                       $implementationVideo = get_post_meta( $post->ID, 'implementation-video-link', true );
 
                   ?>
@@ -145,29 +144,29 @@ $user = wp_get_current_user();
                   <tr>
                     <th></th>
                     <th></th>
-                    <td><a href="<?php echo $framework; ?>/<?php echo $user->ID; ?>">Framework</a></td>
-                    <td><a href="<?php echo $framework; ?>/<?php echo $user->ID; ?>">Download</a></td>
+                    <td><a href="<?php echo $framework; ?>">Framework</a></td>
+                    <td><a href="<?php echo $framework; ?>">Download</a></td>
                   </tr>
                 <?php } if( !empty($skillsMatrix) ) { ?>
                   <tr>
                     <th></th>
                     <th></th>
-                    <td><a href="<?php echo $skillsMatrix; ?>/<?php echo $user->ID; ?>">Skills Matrix</a></td>
-                    <td><a href="<?php echo $skillsMatrix; ?>/<?php echo $user->ID; ?>">Download</a></td>
+                    <td><a href="<?php echo $skillsMatrix; ?>">Skills Matrix</a></td>
+                    <td><a href="<?php echo $skillsMatrix; ?>">Download</a></td>
                   </tr>
                 <?php } if( !empty($studentWorkbook) ) { ?>
                   <tr>
                     <th></th>
                     <th></th>
-                    <td><a href="<?php echo $studentWorkbook; ?>/<?php echo $user->ID; ?>">Student Workbook</a></td>
-                    <td><a href="<?php echo $studentWorkbook; ?>/<?php echo $user->ID; ?>">Download</a></td>
+                    <td><a href="<?php echo $studentWorkbook; ?>">Student Workbook</a></td>
+                    <td><a href="<?php echo $studentWorkbook; ?>">Download</a></td>
                   </tr>
                 <?php } if( !empty($teacherGuide) ) { ?>
                   <tr>
                     <th></th>
                     <th></th>
-                    <td><a href="<?php echo $teacherGuide; ?>/<?php echo $user->ID; ?>">Teacher Guide</a></td>
-                    <td><a href="<?php echo $teacherGuide; ?>/<?php echo $user->ID; ?>">Download</a></td>
+                    <td><a href="<?php echo $teacherGuide; ?>">Teacher Guide</a></td>
+                    <td><a href="<?php echo $teacherGuide; ?>">Download</a></td>
                   </tr>
                 <?php } if( !empty($studentAssessment) ) { ?>
                   <tr>
@@ -176,19 +175,12 @@ $user = wp_get_current_user();
                     <td><a href="<?php echo $studentAssessment; ?>">Student Assessment</a></td>
                     <td><a href="<?php echo $studentAssessment; ?>">Download</a></td>
                   </tr>
-                <?php } if( !empty($rubric) ) { ?>
-                  <tr>
-                    <th></th>
-                    <th></th>
-                    <td><a href="<?php echo $rubric; ?>/<?php echo $user->ID; ?>">Rubric</a></td>
-                    <td><a href="<?php echo $rubric; ?>/<?php echo $user->ID; ?>">Download</a></td>
-                  </tr>
                 <?php } if( !empty($lessonPlan) ) { ?>
                   <tr>
                     <th></th>
                     <th></th>
-                    <td><a href="<?php echo $lessonPlan; ?>/<?php echo $user->ID; ?>">Lesson Plan</a></td>
-                    <td><a href="<?php echo $lessonPlan; ?>/<?php echo $user->ID; ?>">Download</a></td>
+                    <td><a href="<?php echo $lessonPlan; ?>">Lesson Plan</a></td>
+                    <td><a href="<?php echo $lessonPlan; ?>">Download</a></td>
                   </tr>
                 <?php } if( !empty($implementationVideo) ) { ?>
                   <tr>
@@ -326,7 +318,7 @@ $user = wp_get_current_user();
                <tbody>
 
              <?php
-               $args = array( 'post_type' => 'iblocks', 'posts_per_page' => -1, 'order' => 'ASC' );
+               $args = array( 'post_type' => 'iblocks', 'posts_per_page' => -1, 'order' => 'DESC' );
                $the_query = new WP_Query( $args );
 
                  if ( $the_query->have_posts() ) :
@@ -336,9 +328,8 @@ $user = wp_get_current_user();
                      $skillsMatrix = get_post_meta( $post->ID, 'skills-matrix-link', true );
                      $studentWorkbook = get_post_meta( $post->ID, 'student-workbook-link', true );
                      $teacherGuide = get_post_meta( $post->ID, 'teachers-guide-link', true );
-                     $studentAssessment = get_post_meta( $post->ID, 'student-assessment-link', true );
-                     $rubric = get_post_meta( $post->ID, 'rubric-link', true );
-                     $lessonPlan = get_post_meta( $post->ID, 'lesson-plan-link', true );
+                     $studentAssessment = get_post_meta( $post->ID, 'st-selfassessment-link', true );
+                     $lessonPlan = get_post_meta( $post->ID, 'lesson-plans-link', true );
                      $implementationVideo = get_post_meta( $post->ID, 'implementation-video-link', true );
 
                  ?>
@@ -353,29 +344,29 @@ $user = wp_get_current_user();
                   <tr>
                     <th></th>
                     <th></th>
-                    <td><a href="<?php echo $framework; ?>/<?php echo $user->ID; ?>">Framework</a></td>
-                    <td><a href="<?php echo $framework; ?>/<?php echo $user->ID; ?>">Download</a></td>
+                    <td><a href="<?php echo $framework; ?>">Framework</a></td>
+                    <td><a href="<?php echo $framework; ?>">Download</a></td>
                   </tr>
                 <?php } if( !empty($skillsMatrix) ) { ?>
                   <tr>
                     <th></th>
                     <th></th>
-                    <td><a href="<?php echo $skillsMatrix; ?>/<?php echo $user->ID; ?>">Skills Matrix</a></td>
-                    <td><a href="<?php echo $skillsMatrix; ?>/<?php echo $user->ID; ?>">Download</a></td>
+                    <td><a href="<?php echo $skillsMatrix; ?>">Skills Matrix</a></td>
+                    <td><a href="<?php echo $skillsMatrix; ?>">Download</a></td>
                   </tr>
                 <?php } if( !empty($studentWorkbook) ) { ?>
                   <tr>
                     <th></th>
                     <th></th>
-                    <td><a href="<?php echo $studentWorkbook; ?>/<?php echo $user->ID; ?>">Student Workbook</a></td>
-                    <td><a href="<?php echo $studentWorkbook; ?>/<?php echo $user->ID; ?>">Download</a></td>
+                    <td><a href="<?php echo $studentWorkbook; ?>">Student Workbook</a></td>
+                    <td><a href="<?php echo $studentWorkbook; ?>">Download</a></td>
                   </tr>
                 <?php } if( !empty($teacherGuide) ) { ?>
                   <tr>
                     <th></th>
                     <th></th>
-                    <td><a href="<?php echo $teacherGuide; ?>/<?php echo $user->ID; ?>">Teacher Guide</a></td>
-                    <td><a href="<?php echo $teacherGuide; ?>/<?php echo $user->ID; ?>">Download</a></td>
+                    <td><a href="<?php echo $teacherGuide; ?>">Teacher Guide</a></td>
+                    <td><a href="<?php echo $teacherGuide; ?>">Download</a></td>
                   </tr>
                 <?php } if( !empty($studentAssessment) ) { ?>
                   <tr>
@@ -388,15 +379,15 @@ $user = wp_get_current_user();
                   <tr>
                     <th></th>
                     <th></th>
-                    <td><a href="<?php echo $rubric; ?>/<?php echo $user->ID; ?>">Rubric</a></td>
-                    <td><a href="<?php echo $rubric; ?>/<?php echo $user->ID; ?>">Download</a></td>
+                    <td><a href="<?php echo $rubric; ?>">Rubric</a></td>
+                    <td><a href="<?php echo $rubric; ?>">Download</a></td>
                   </tr>
                 <?php } if( !empty($lessonPlan) ) { ?>
                   <tr>
                     <th></th>
                     <th></th>
-                    <td><a href="<?php echo $lessonPlan; ?>/<?php echo $user->ID; ?>">Lesson Plan</a></td>
-                    <td><a href="<?php echo $lessonPlan; ?>/<?php echo $user->ID; ?>">Download</a></td>
+                    <td><a href="<?php echo $lessonPlan; ?>">Lesson Plan</a></td>
+                    <td><a href="<?php echo $lessonPlan; ?>">Download</a></td>
                   </tr>
                 <?php } if( !empty($implementationVideo) ) { ?>
                   <tr>

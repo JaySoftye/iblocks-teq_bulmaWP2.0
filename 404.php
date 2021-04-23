@@ -15,7 +15,7 @@ get_header();
         <h1 class="white thin is-size-1 has-text-centered">404 - Page Not Found</h1>
         <p class="white has-text-centered">Looks like this page was either deleted, moved or never existed.</p>
         <p class="white has-text-centered padding-sm">
-          <a href="#skillsmatrix" class="button is-primary is-rounded is-medium is-inverted is-outlined">
+          <a href="<?php echo get_site_url(); ?>" class="button">
             <span>Try and head back to the home page</span>
             <span class="icon">
               <i class="fas fa-home"></i>
@@ -25,6 +25,6 @@ get_header();
       </div>
     </div>
   </div>
-  
+
 </div>
 <?php get_footer(); ?>
