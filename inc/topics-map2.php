@@ -168,6 +168,7 @@
           'posts_per_page' => -1,
           'orderby' => 'title',
           'order' => 'ASC',
+          'category_name' => 'iblock-pathways',
         );
         $iblock_post_query = new WP_Query( $iblock_post_args );
         if ($iblock_post_query -> have_posts()) :

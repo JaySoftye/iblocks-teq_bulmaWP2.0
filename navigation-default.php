@@ -42,7 +42,7 @@
   <div class="modal-background"></div>
   <div class="modal-content">
     <div class="columns nomargin">
-      <div class="column padding white-background">
+      <div class="column padding grey-background">
         <h3 class="small-header strong blue-text">Send us a message and our PD Curriculum Team will reach out to you directly or call us toll free at 877.455.9369.</h3>
         <br />
         <!--[if lte IE 8]>

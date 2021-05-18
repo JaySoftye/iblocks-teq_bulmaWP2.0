@@ -365,20 +365,20 @@
     ?>
     <div class="section full-width-mobile iblocks-page-footer <?php echo $post_slug; ?>">
       <div class="container is-fluid fade-in-container">
-        <div class="columns flex-wrap">
-          <div class="column is-one-third-desktop is-half-tablet padding-sm target-animate-slow">
+        <div class="columns is-multiline is-vcentered is-centered">
+          <div class="column is-one-third-desktop is-half-tablet target-animate-slow">
             <section class="padding-sm white-background">
               <h3 class="has-text-centered small-header"><strong>Need inspiration? <br /><span class="pink-text">Explore our STEM products that can be utilized with iBlocks.</span></strong></h3>
               <p class="has-text-centered"><a href="https://www.teq.com/stem" class="button pink">Learn more</a></p>
             </section>
           </div>
-          <div class="column is-one-third-desktop is-half-tablet padding-sm target-animate">
+          <div class="column is-one-third-desktop is-half-tablet target-animate">
             <section class="padding-sm white-background">
               <h3 class="has-text-centered small-header"><strong>Need ideas?<br /><span class="blue-text">Explore some of the iBlocks solutions we’ve already created.</span></strong></h3>
               <p class="has-text-centered"><a href="/iblocks-ideas" class="button">Learn more</a></p>
             </section>
           </div>
-          <div class="column is-one-third-desktop is-half-tablet padding-sm target-animate-fast">
+          <div class="column is-one-third-desktop is-half-tablet target-animate-fast">
             <section class="padding-sm white-background">
               <h3 class="has-text-centered small-header"><strong>Need support?<br /><span class="lavender-text">Subscribe to our online professional development platform.</span></strong></h3>
               <p class="has-text-centered"><a href="https://otis.teq.com" class="button lavender otis-button">askOTIS.com <img src="<?php echo get_template_directory_uri();?>/assets/img/otis-brand_logo.png" /></a></p>

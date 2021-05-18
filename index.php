@@ -53,42 +53,30 @@ get_header(); ?>
       <div class="column is-one-third-desktop is-half-tablet target-animate">
         <div class="padding-sm white-background-fill full-height-100">
           <p class="has-text-centered"><img src="<?php echo get_template_directory_uri();?>/assets/img/school-icon.svg" /></p>
-          <h3 class="has-text-centered small-header"><strong>School Benefit</strong></h3>
+          <h3 class="has-text-centered small-header"><strong>Out-of-the-box PBL for schools</strong></h3>
           <p class="has-text-centered sans-serif">Bring STEM into the classroom with activities that excite students, take the pressure off teachers, and align to important learning standards.</p>
           <p class="has-text-centered margin-top">
-            <a href="/iblocks-impact" class="btn">
-            <span class="text">Learn more</span>
-            <span class="flip-front">Learn more</span>
-            <span class="flip-back">About school benefits</span>
-            </a>
+            <a href="/iblocks-impact" class="button">Learn more</a>
           </p>
         </div>
       </div>
       <div class="column is-one-third-desktop is-half-tablet target-animate-fast">
         <div class="padding-sm white-background-fill full-height-100">
           <p class="has-text-centered"><img src="<?php echo get_template_directory_uri();?>/assets/img/teacher-icon.svg" /></p>
-          <h3 class="has-text-centered small-header"><strong>Teacher Benefit</strong></h3>
+          <h3 class="has-text-centered small-header"><strong>Easy lift, high reward for teachers </strong></h3>
           <p class="has-text-centered sans-serif">Put the “wow” back into STEM learning with project-based activities that engage students in critical thinking, teamwork, and fun.</p>
           <p class="has-text-centered margin-top">
-            <a href="/iblocks-impact" class="btn">
-            <span class="text">Learn more</span>
-            <span class="flip-front">Learn more</span>
-            <span class="flip-back">About teacher benefits</span>
-            </a>
+            <a href="/what-is-an-iblock" class="button">Learn more</a>
           </p>
         </div>
       </div>
       <div class="column is-one-third-desktop is-half-tablet target-animate-slow">
         <div class="padding-sm white-background-fill full-height-100">
           <p class="has-text-centered"><img src="<?php echo get_template_directory_uri();?>/assets/img/student-icon.svg" /></p>
-          <h3 class="has-text-centered small-header"><strong>Student Benefit</strong></h3>
+          <h3 class="has-text-centered small-header"><strong> Get students excited about STEM</strong></h3>
           <p class="has-text-centered sans-serif">Provide students with hands-on learning that puts them in the lead as they investigate, explore, and create!</p>
           <p class="has-text-centered margin-top">
-            <a href="/iblocks-impact" class="btn">
-            <span class="text">Learn more</span>
-            <span class="flip-front">Learn more</span>
-            <span class="flip-back">About student benefits</span>
-            </a>
+            <a href="/iblocks-impact" class="button">Learn more</a>
           </p>
         </div>
       </div>
