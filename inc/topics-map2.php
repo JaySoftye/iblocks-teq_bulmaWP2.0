@@ -221,5 +221,3 @@
     </div>
   </div>
 </div>
-
-<?php include( get_template_directory() . '/inc/Prosthetic-hand-iblock-download-form.php'); ?>

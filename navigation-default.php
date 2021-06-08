@@ -18,10 +18,10 @@
       <a href="<?php echo get_site_url(); ?>/what-is-an-iblock" class="navbar-item <?php if (is_page("What is an iBlock?")) { ?> selected <?php } ?>">What is an iBlock?</a>
       <a href="<?php echo get_site_url(); ?>/iblocks-impact" class="navbar-item <?php if (is_page("iBlocks impact")) { ?> selected <?php } ?>">iBlocks impact</a>
       <a href="<?php echo get_site_url(); ?>/how-we-build-an-iblock" class="navbar-item <?php if (is_page("How we build an iBlock")) { ?> selected <?php } ?>">How we build an iBlock</a>
-      <a href="<?php echo get_site_url(); ?>/iblocks-packages" class="navbar-item <?php if (is_page("iBlocks packages")) { ?> selected <?php } ?>">iBlocks packages</a>
       <a href="<?php echo get_site_url(); ?>/iblocks-ideas" class="navbar-item rubegoldberg <?php if (is_page("iBlocks ideas")) { ?> selected <?php } ?>">iBlocks Solutions
         <img src="<?php echo get_template_directory_uri();?>/assets/img/rubegoldberg-brand_logo.png" />
       </a>
+      <a href="<?php echo get_site_url(); ?>/sample-downloads" class="navbar-item <?php if (is_page("Sample Downloads")) { ?> selected <?php } ?>">Sample Downloads</a>
       <a class="navbar-item contact-us-modal-button">Contact us</a>
     </div>
   </div>
@@ -30,8 +30,8 @@
       <li><a href="<?php echo get_site_url(); ?>/what-is-an-iblock" class="navbar-item <?php if (is_page("What is an iBlock?")) { ?> selected <?php } ?>">What is an iBlock?</a></li>
       <li><a href="<?php echo get_site_url(); ?>/iblocks-impact" class="navbar-item <?php if (is_page("iBlocks impact")) { ?> selected <?php } ?>">iBlocks impact</a></li>
       <li><a href="<?php echo get_site_url(); ?>/how-we-build-an-iblock" class="navbar-item <?php if (is_page("How we build an iBlock")) { ?> selected <?php } ?>">How we build an iBlock</a></li>
-      <li><a href="<?php echo get_site_url(); ?>/iblocks-packages" class="navbar-item <?php if (is_page("iBlocks packages")) { ?> selected <?php } ?>">iBlocks packages</a></li>
       <li><a href="<?php echo get_site_url(); ?>/iblocks-ideas" class="navbar-item rubegoldberg <?php if (is_page("iBlocks ideas")) { ?> selected <?php } ?>">iBlocks solutions</a></li>
+      <li><a href="<?php echo get_site_url(); ?>/sample-downloads" class="navbar-item <?php if (is_page("Sample Downloads")) { ?> selected <?php } ?>">Sample Downloads</a></li>
       <li><a class="navbar-item contact-us-modal-button">Contact us</a></li>
     </ul>
   </nav>

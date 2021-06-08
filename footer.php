@@ -362,31 +362,36 @@
       global $post;
       $post_slug = $post->post_name;
 
-    ?>
+      $footer_section = get_post_meta(get_the_ID(), 'needInspirationIdeasSupport', true);
+        if( isset($footer_section) && $footer_section == "false" ) :
+  ?>
+
+  <?php else : ?>
     <div class="section full-width-mobile iblocks-page-footer <?php echo $post_slug; ?>">
-      <div class="container is-fluid fade-in-container">
-        <div class="columns is-multiline is-vcentered is-centered">
-          <div class="column is-one-third-desktop is-half-tablet target-animate-slow">
-            <section class="padding-sm white-background">
-              <h3 class="has-text-centered small-header"><strong>Need inspiration? <br /><span class="pink-text">Explore our STEM products that can be utilized with iBlocks.</span></strong></h3>
-              <p class="has-text-centered"><a href="https://www.teq.com/stem" class="button pink">Learn more</a></p>
-            </section>
-          </div>
-          <div class="column is-one-third-desktop is-half-tablet target-animate">
-            <section class="padding-sm white-background">
-              <h3 class="has-text-centered small-header"><strong>Need ideas?<br /><span class="blue-text">Explore some of the iBlocks solutions we’ve already created.</span></strong></h3>
-              <p class="has-text-centered"><a href="/iblocks-ideas" class="button">Learn more</a></p>
-            </section>
-          </div>
-          <div class="column is-one-third-desktop is-half-tablet target-animate-fast">
-            <section class="padding-sm white-background">
-              <h3 class="has-text-centered small-header"><strong>Need support?<br /><span class="lavender-text">Subscribe to our online professional development platform.</span></strong></h3>
-              <p class="has-text-centered"><a href="https://otis.teq.com" class="button lavender otis-button">askOTIS.com <img src="<?php echo get_template_directory_uri();?>/assets/img/otis-brand_logo.png" /></a></p>
-            </section>
-          </div>
+    <div class="container is-fluid fade-in-container">
+      <div class="columns is-multiline is-vcentered is-centered">
+        <div class="column is-one-third-desktop is-half-tablet target-animate-slow">
+          <section class="padding-sm white-background">
+            <h3 class="has-text-centered small-header"><strong>Need inspiration? <br /><span class="pink-text">Explore our STEM products that can be utilized with iBlocks.</span></strong></h3>
+            <p class="has-text-centered"><a href="https://www.teq.com/stem" class="button pink">Learn more</a></p>
+          </section>
+        </div>
+        <div class="column is-one-third-desktop is-half-tablet target-animate">
+          <section class="padding-sm white-background">
+            <h3 class="has-text-centered small-header"><strong>Need ideas?<br /><span class="blue-text">Explore some of the iBlocks solutions we’ve already created.</span></strong></h3>
+            <p class="has-text-centered"><a href="/iblocks-ideas" class="button">Learn more</a></p>
+          </section>
+        </div>
+        <div class="column is-one-third-desktop is-half-tablet target-animate-fast">
+          <section class="padding-sm white-background">
+            <h3 class="has-text-centered small-header"><strong>Need support?<br /><span class="lavender-text">Subscribe to our online professional development platform.</span></strong></h3>
+            <p class="has-text-centered"><a href="https://otis.teq.com" class="button lavender otis-button">askOTIS.com <img src="<?php echo get_template_directory_uri();?>/assets/img/otis-brand_logo.png" /></a></p>
+          </section>
         </div>
       </div>
     </div>
+    </div>
+  <?php endif; ?>
     <div class="container is-fluid nomargin footer-background-fill hide-small">
       <div class="columns is-centered">
         <div class="column is-5 pill-container white-background-fill drop-shadow" style="display:none;">
@@ -646,8 +651,8 @@
               <li><a href="<?php echo get_home_url(); ?>/what-is-an-iblock">What is an iBlock? »</a></li>
               <li><a href="<?php echo get_home_url(); ?>/iBlocks-impact">iBlocks impact »</a></li>
               <li><a href="<?php echo get_home_url(); ?>/how-we-build-an-iblock">How we build an iBlock »</a></li>
-              <li><a href="<?php echo get_home_url(); ?>/iblocks-packages">iBlocks packages »</a></li>
               <li><a href="<?php echo get_home_url(); ?>/iblocks-ideas">iBlocks solutions »</a></li>
+              <li><a href="<?php echo get_home_url(); ?>/sample-downloads">iBlocks Samples »</a></li>
               <li><a class="contact-us-modal-button">Contact us »</a></li>
             </ul>
           </div>

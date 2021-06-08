@@ -60,6 +60,8 @@
                 include( get_template_directory() . '/inc/Rube-Goldberg-iblock-download-form.php');
               elseif( isset($custom_value) && $custom_value == "Prosthetic Hand" ) :
                 include( get_template_directory() . '/inc/Prosthetic-hand-iblock-download-form.php');
+              elseif( isset($custom_value) && $custom_value == "Sample iBlocks" ) :
+                include( get_template_directory() . '/inc/sample-iblock-download-forms.php');
             endif;
 
         endwhile; endif; } ?>
