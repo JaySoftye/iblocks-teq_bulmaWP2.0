@@ -266,12 +266,14 @@
           </div>
           <div class="column is-one-quarter">
             <ul class="menu-list">
-              <li><a href="<?php echo get_home_url(); ?>/what-is-an-iblock">What is an iBlock? »</a></li>
-              <li><a href="<?php echo get_home_url(); ?>/iBlocks-impact">iBlocks impact »</a></li>
-              <li><a href="<?php echo get_home_url(); ?>/how-we-build-an-iblock">How we build an iBlock »</a></li>
-              <li><a href="<?php echo get_home_url(); ?>/iblocks-packages">iBlocks packages »</a></li>
-              <li><a href="<?php echo get_home_url(); ?>/iblocks-ideas">iBlocks solutions »</a></li>
-              <li><a class="contact-us-modal-button">Contact us »</a></li>
+              <li><a href="<?php echo get_home_url(); ?>/what-is-an-iblock">What Is An iBlock? »</a></li>
+              <li><a href="<?php echo get_home_url(); ?>/iBlocks-impact">iBlocks Impact »</a></li>
+              <li><a href="<?php echo get_home_url(); ?>/how-we-build-an-iblock">How We Build An iBlock »</a></li>
+              <li><a href="<?php echo get_home_url(); ?>/iblocks-ideas">iBlocks Solutions »</a></li>
+              <li><a href="<?php echo get_home_url(); ?>/sample-downloads">iBlocks Samples »</a></li>
+              <li><a href="https://www.teq.com/browse/stem-technologies/">STEM Solutions »</a></li>
+              <li><a href="https://otis.teq.com/">Professional Development »</a></li>
+              <li><a class="contact-us-modal-button">Contact Us »</a></li>
             </ul>
           </div>
           <div class="column is-one-quarter">
@@ -648,12 +650,14 @@
           </div>
           <div class="column is-one-quarter">
             <ul class="menu-list">
-              <li><a href="<?php echo get_home_url(); ?>/what-is-an-iblock">What is an iBlock? »</a></li>
-              <li><a href="<?php echo get_home_url(); ?>/iBlocks-impact">iBlocks impact »</a></li>
-              <li><a href="<?php echo get_home_url(); ?>/how-we-build-an-iblock">How we build an iBlock »</a></li>
-              <li><a href="<?php echo get_home_url(); ?>/iblocks-ideas">iBlocks solutions »</a></li>
+              <li><a href="<?php echo get_home_url(); ?>/what-is-an-iblock">What Is An iBlock? »</a></li>
+              <li><a href="<?php echo get_home_url(); ?>/iBlocks-impact">iBlocks Impact »</a></li>
+              <li><a href="<?php echo get_home_url(); ?>/how-we-build-an-iblock">How We Build An iBlock »</a></li>
+              <li><a href="<?php echo get_home_url(); ?>/iblocks-ideas">iBlocks Solutions »</a></li>
               <li><a href="<?php echo get_home_url(); ?>/sample-downloads">iBlocks Samples »</a></li>
-              <li><a class="contact-us-modal-button">Contact us »</a></li>
+              <li><a href="https://www.teq.com/browse/stem-technologies/">STEM Solutions »</a></li>
+              <li><a href="https://otis.teq.com/">Professional Development »</a></li>
+              <li><a class="contact-us-modal-button">Contact Us »</a></li>
             </ul>
           </div>
           <div class="column is-one-quarter">
