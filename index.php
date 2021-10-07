@@ -128,7 +128,7 @@ get_header(); ?>
         <p><img src="<?php echo get_template_directory_uri();?>/assets/img/rubegoldberg-section-partnership-logos.jpg" /></p>
       </div>
       <div class="column is-4-deskop padding-sm target-animate-fast">
-        <script src="https://fast.wistia.com/embed/medias/qc6wm0d0e8.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_qc6wm0d0e8 popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
+        <p><img src="<?php echo get_template_directory_uri();?>/assets/img/jennifer-george.jpg" /></p>
         <h6><br />Meet Jennifer, the granddaughter of the famous Rube Goldberg, and learn about our mission to bring Rube Goldberg Machine fun into every classroom. </h6>
       </div>
     </div>
